@@ -33,7 +33,26 @@ body{
     width: 400px;
     height: 40px;
     margin: 10px;
-    background-color: aquamarine;
+    background: transparent;
     padding: 10px;
-    box-shadow: 0 10px 10px  rgba(0,0,0,0.3);
+    box-shadow: 0 10px 10px  rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.toast-show i{
+    margin: 0 10px;
+    /* font-size: 30px; */
+    /* color: green; */
+}
+
+.toast-show.success i{
+    color: green;
+}
+
+.toast-show.error i{
+    color: red;
+}
+
+.toast-show.invalid i{
+    color: orange;
 }
