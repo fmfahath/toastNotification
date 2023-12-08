@@ -7,8 +7,7 @@ function showToast(msg){
     let toastDivEl = document.createElement('div');
     toastDivEl.classList.add('toast-show');
     toastDivEl.innerHTML = msg;
-    
- 
+    toastBoxEl.appendChild(toastDivEl);
 
     if(msg === successMsg){
         toastDivEl.classList.add('success');
@@ -19,10 +18,10 @@ function showToast(msg){
     else{
         toastDivEl.classList.add('invalid');
     }
-  
 
-    toastBoxEl.appendChild(toastDivEl);
+    setTimeout(() => {
+        toastDivEl.remove();
+    }, 6000);
     
-
-console.log('finished');
+    
 }
