@@ -38,6 +38,8 @@ body{
     box-shadow: 0 10px 10px  rgba(0,0,0,0.2);
     border-radius: 10px;
     position: relative;
+    transform: translateX(100%);
+    animation: moveLeft 0.5s linear forwards;
 }
 
 .toast-show i{
@@ -80,5 +82,11 @@ body{
 @keyframes anim {
     100%{
         width: 0;
+    }
+}
+
+@keyframes moveLeft{
+    100%{
+        transform: translateX(0);
     }
 }
